@@ -4,13 +4,10 @@ function twoSum(numbers, target) {
 
   while (left < right) {
     if (numbers[left] + numbers[right] > target) {
-      //console.log(numbers[left] + numbers[right])
       right -= 1;
     } else if (numbers[left] + numbers[right] < target) {
       left += 1;
     } else {
-      // console.log(left);
-      // console.log(right);
       return [left + 1, right + 1];
     }
   }
